@@ -26,7 +26,7 @@ struct ContentView: View {
             
             Section{
                 
-                Text("I am 23 software Engineer. \npasionate about tech, software devolopment, and contrbuting in impactful projects.")
+                Text("Hello I am 23 software Engineer. \npasionate about tech, software devolopment, and contrbuting in impactful projects.")
                 
             } header: {
                 Text("About")
