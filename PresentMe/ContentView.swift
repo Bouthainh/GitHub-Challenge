@@ -2,19 +2,28 @@ import SwiftUI
 import Playgrounds
 
 struct ContentView: View {
+    var name : String = "Bouthainh"
+    var Availability : Bool = false
+    
     var body: some View {
              
         List{
             
             VStack{
-                Image(.profileImg)
-                    .resizable()
-                    .frame(width: 120, height: 120)
+                Image(Availability ? .profileImg : .sleepProfile)
+                        .resizable()
+                        .frame(width: 120, height: 120)
                     .clipShape(.circle)
                 
-                Text("Bouthainh, \(23)")
+                
+                
+                Text(name)
                     .font(.title)
                     .fontWeight(.semibold)
+                
+                
+             Text (Availability ? "Available!" : "Not Available")
+                 .foregroundStyle( Availability ? .green : .red)
                 
             }
             
